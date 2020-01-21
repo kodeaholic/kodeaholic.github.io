@@ -1,0 +1,298 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #169A82;
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+.dis-none{
+    display: none;
+}
+.dataTables_scrollHeadInner,.dataTables_scrollBody,.table-score{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1281px) {
+    .menu {
+        width: 40vw;
+        margin: 0 30vw;
+    }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .menu {
+        width: auto;
+        margin: 0 25vw;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu {
+        width: auto;
+        margin: 0 20vw;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (max-width: 812px){
+    .dataTables_wrapper div[class^="col-"]{
+        padding: 0px !important;
+    }
+    div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+        text-align: left !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .menu {
+        width: 70vw;
+        margin: 0 15vw;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media only screen and (min-width: 600px) {
+    .title-name{
+        width : 160px;
+    }
+    .title-phone{
+        width : 150px;
+    }
+    .title-index{
+        width : 40px;
+    }
+    .title-score{
+        width : 95px;
+    }
+    .title-time{
+        width: 180px;
+    }
+    .table-score td{
+        text-align: left;
+    }
+}
+@media (min-width: 481px) and (width: 767px) {
+    .menu {
+        width: 70vw;
+        margin: 0 15vw;
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (width: 480px) {
+    .menu {
+        width: 88vw;
+        margin: 0 1vw;
+    }
+}
+
+.app-wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.background-image {
+    margin-top: 5px;
+    max-height: calc(100vh - 10px);
+    width: 100vw;
+}
+
+.menu {
+    /*width: use media query for this ;*/
+    height: 100%;
+    background  : url("../images/background2.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.menu-item-wrapper {
+    position: relative;
+    top: 30%;
+    height: 50%;
+    width: 50%;
+    margin: 0 25%;
+}
+.menu-item {
+    cursor: pointer;
+    display: block;
+    height: 40px !important;
+    padding-top: 10px;
+    width: 100%;
+    border: 1px solid #ffff00;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff00 !important;
+    text-decoration: none;
+}
+a:hover, a:active {
+    outline: none;
+    text-decoration: none;
+    color: #ffff00;
+}
+#scoreboard-table {
+
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: .8em;
+    }
+
+    table thead {
+        font-size: .8em;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        /*display: block;*/
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        /*display: block;*/
+        font-size: .8em;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .table-score th{
+        text-align: left;
+    }
+    .title-name{
+        width : 160px !important;
+    }
+    .title-phone{
+        width : 160px !important;
+    }
+    .title-index{
+        width : 40px !important;
+    }
+    .title-score{
+        width : 80px !important;
+    }
+    .title-time{
+        width: 180px !important;
+    }
+
+    table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .menu-item {
+        font-size: 12px
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .menu-item {
+        font-size: 14px
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .menu-item {
+        font-size: 14px
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .menu-item {
+        font-size: 14px
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .menu-item {
+        font-size: 14px
+    }
+}
+
+.paragraph {
+    margin-bottom: 10px;
+}
+.sentence {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

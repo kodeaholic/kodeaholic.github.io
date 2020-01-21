@@ -1,0 +1,406 @@
+
+html, body {
+  background-color : #169A82;
+  width            : 100%;
+  height           : 100%;
+  margin           : 0;
+  overflow         : hidden;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.landscape{
+  display: none;
+}
+.dis-none{
+  display: none;
+}
+.row{
+  margin: 0px;
+}
+.row-container {
+  display : flex;
+  height : 100%;
+  justify-content: center;
+}
+.m-t-10{
+  margin-top: 10px;
+}
+.game {
+  background      : url("../images/background2.png") no-repeat;
+  background-size : 100% 100%;
+  margin          : auto;
+  padding         : 0px;
+  height          : 100%;
+}
+
+nav {
+  width          : 90%;
+  margin-top     : 20px;
+  padding-right  : 20px;
+  font-family    : 'Rubik', sans-serif;
+  font-weight    : 500;
+  font-size      : 11px;
+  letter-spacing : 2px;
+  text-transform : uppercase;
+  position       : absolute;
+}
+
+a {
+  color           : #2C2499;
+  text-decoration : none;
+  /*float: right;*/
+}
+
+.logo {
+  float : left;
+}
+
+li {
+  padding-left    : 25px;
+  display         : inline-block;
+  text-decoration : none;
+  float           : right;
+}
+
+div.login-form {
+  position    : absolute;
+  right       : 100px;
+  margin-top  : 50px;
+  font-family : 'Rubik', sans-serif;
+}
+
+span.login-title {
+  padding-right : 10px;
+  color         : red;
+}
+
+.game-title {
+  margin-left    : 100px;
+  display        : inline-block;
+  margin-top     : 50px;
+  color          : white;
+  font-size      : 125px;
+  text-transform : uppercase;
+  font-family    : 'Russo One', sans-serif;
+  text-align     : center;
+}
+
+.game-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+/*Flex Box Starts Here*/
+.game-box-flex {
+  display         : flex;
+  flex-direction  : row;
+  flex-wrap       : wrap;
+  /*justify-content: flex-start;*/
+  justify-content : space-evenly;
+  width           : 95%;
+  height          : 100px;
+  /*background-color: gray;*/
+  margin          : auto;
+
+}
+
+/*chicken image credit: http://nachalo4ka.ru/kartinki-dlya-detey-domashnie-zhivotnyie/kuritsa-4/*/
+
+div.chicken {
+  width             : 150px;
+  height            : 150px;
+  /*background-color: black;*/
+  margin            : 1px;
+  background-repeat : no-repeat;
+  background-size   : contain;
+  background-image  : url("../images/chicken_cartoon.png");
+}
+
+div.chick-1 {
+  background-image : url("../images/phone.png");
+}
+
+div.chick-2 {
+  background-image : url("../images/phone.png");
+}
+
+div.chick-3 {
+  background-image : url("../images/phone.png");
+}
+
+div.basket {
+  width             : 150px;
+  height            : 75px;
+  background-image  : url("../images/mouse.png");
+  background-repeat : no-repeat;
+  background-size   : contain;
+  bottom            : 2.7%;
+  left              : 45%;
+  position : absolute;
+}
+
+/*create class for egg */
+div.egg {
+  width             : 45px;
+  height            : 60px;
+  position          : absolute;
+  background-size   : contain;
+  /* background-color: yellow;*/
+  background-repeat : no-repeat;
+  background-image  : url("../images/egg_phone.png");
+}
+
+div.score {
+  font-family: 'Russo One', sans-serif;
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  top: 15%;
+  color: white;
+  font-size: 70px;
+
+}
+
+div.life-container {
+  display        : flex;
+  align-items    : center;
+  position       : absolute;
+  flex-direction : column;
+}
+div.life-left{
+  left           : 9%;
+  bottom         : 19%;
+}
+
+div.life-right{
+  right: 5%;
+  top : 45%;
+}
+
+div.life {
+  background-size   : contain;
+  /* background-color: yellow;*/
+  background-repeat : no-repeat;
+  margin-top: 10px;
+}
+
+div.life-1 {
+  background-image  : url("../images/life-1.png");
+  width: 80px;
+  height: 30px;
+}
+
+div.life-2 {
+  background-image  : url("../images/life-2.png");
+  width: 70px;
+  height: 42px;
+}
+
+div.life-3 {
+  background-image  : url("../images/life-3.png");
+  width: 61px;
+  height: 58px;
+}
+
+table.score-table {
+  color       : white;
+  position    : absolute;
+  border      : 1px solid white;
+  width       : 20%;
+  right       : 20px;
+  top         : 50%;
+  font-family : 'Rubik', sans-serif;
+}
+
+table.score-table td {
+  padding-left : 30px;
+  border       : 1px solid white;
+  font-family  : 'Rubik', sans-serif;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  div.row-container{
+    div.score{
+      font-size : 30px;
+      right     : -40px;
+      top       : 16%;
+    }
+    div.life-left{
+      left: 6%;
+    }
+    div.life-right{
+      right : 2%;
+    }
+    div.life-1{
+      width: 70px;
+      height: 30px;
+    }
+    div.life-2{
+      width: 60px;
+      height: 40px;
+    }
+    div.life-3{
+      width: 52px;
+      height: 54px;
+    }
+    .game-container{
+      padding-top: 28vh;
+      div.basket {
+        width  : 120px;
+        height : 70px;
+        background-size: 100% 100%;
+        left: 28%;
+      }
+      div.chicken{
+        width: 63px;
+        height: 75px;
+        div.egg{
+          width             : 37px;
+          height            : 50px;
+        }
+      }
+    }
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  div.row-container{
+    div.score{
+      font-size : 50px;
+      right     : 0 ;
+      top       : 16%;
+    }
+    div.life-left{
+      left: 8%;
+    }
+    div.life-right{
+      right : 6%;
+    }
+    div.life-1{
+      width: 70px;
+      height: 30px;
+    }
+    div.life-2{
+      width: 60px;
+      height: 40px;
+    }
+    div.life-3{
+      width: 52px;
+      height: 54px;
+    }
+    .game-container{
+      padding-top: 28vh;
+      div.basket {
+        width  : 120px;
+        height : 60px;
+        left   : 40vw;
+      }
+      div.chicken{
+        width: 75px;
+        height: 75px;
+        div.egg{
+          width             : 37px;
+          height            : 50px;
+        }
+      }
+    }
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  div.row-container{
+    div.score{
+      font-size : 50px;
+      right     : 52px ;
+      top       : 19%;
+    }
+    div.life-left{
+      left: 5vw;
+    }
+    div.life-right{
+      right : 2vw;
+    }
+    .game-container{
+      div.game-box-flex{
+        justify-content: space-around;
+      }
+      div.basket {
+        width  : 140px;
+        height : 70px;
+        left   : 40vw;
+      }
+      div.chicken{
+        width: 100px;
+        height: 90px;
+        div.egg{
+          width             : 45px;
+          height            : 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-height: 500px) {
+  div.row-container {
+    div.score {
+      font-size : 30px;
+      right     : -40px;
+      top       : 16%;
+    }
+
+    div.life-left {
+      left : 1vw;
+    }
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  div.row-container{
+    div.life-right {
+      right : 3vw;
+    }
+    div.game-container{
+      div.chicken{
+        width: 120px;
+        height: 120px;
+      }
+      div.basket {
+        width             : 150px;
+        height            : 75px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+{
+  "players": [
+    {
+      "user_id": 2,
+      "name": "Nguyễn Văn Hoàng",
+      "score": 139,
+      "date": "15-01-2020 15:30:00",
+      "phone": "0936190980"
+    },
+    {
+      "user_id": 4,
+      "name": "Nguyễn Đăng Quang",
+      "score": 138,
+      "date": "16-01-2020 22:44:25",
+      "phone": "0936190986"
+    },
+    {
+      "user_id": 3,
+      "name": "Nguyễn Văn Ngọc",
+      "score": 138,
+      "date": "16-01-2020 23:16:32",
+      "phone": "0936100980"
+    },
+    {
+      "user_id": 2,
+      "name": "Nguyễn Văn Hoàng",
+      "score": 139,
+      "date": "15-01-2020 15:30:00",
+      "phone": "0936190980"
+    },
+    {
+      "user_id": 4,
+      "name": "Nguyễn Đăng Quang",
+      "score": 138,
+      "date": "16-01-2020 22:44:25",
+      "phone": "0936190986"
+    },
+    {
+      "user_id": 3,
+      "name": "Nguyễn Văn Ngọc",
+      "score": 138,
+      "date": "16-01-2020 23:16:32",
+      "phone": "0936100980"
+    },
+    {
+      "user_id": 2,
+      "name": "Nguyễn Văn Hoàng",
+      "score": 139,
+      "date": "15-01-2020 15:30:00",
+      "phone": "0936190980"
+    },
+    {
+      "user_id": 4,
+      "name": "Nguyễn Đăng Quang",
+      "score": 138,
+      "date": "16-01-2020 22:44:25",
+      "phone": "0936190986"
+    },
+    {
+      "user_id": 3,
+      "name": "Nguyễn Văn Ngọc",
+      "score": 138,
+      "date": "16-01-2020 23:16:32",
+      "phone": "0936100980"
+    },
+    {
+      "user_id": 2,
+      "name": "Nguyễn Văn Hoàng",
+      "score": 139,
+      "date": "15-01-2020 15:30:00",
+      "phone": "0936190980"
+    },
+    {
+      "user_id": 4,
+      "name": "Nguyễn Đăng Quang",
+      "score": 138,
+      "date": "16-01-2020 22:44:25",
+      "phone": "0936190986"
+    },
+    {
+      "user_id": 3,
+      "name": "Nguyễn Văn Ngọc",
+      "score": 138,
+      "date": "16-01-2020 23:16:32",
+      "phone": "0936100980"
+    },
+    {
+      "user_id": 2,
+      "name": "Nguyễn Văn Hoàng",
+      "score": 139,
+      "date": "15-01-2020 15:30:00",
+      "phone": "0936190980"
+    },
+    {
+      "user_id": 4,
+      "name": "Nguyễn Đăng Quang",
+      "score": 138,
+      "date": "16-01-2020 22:44:25",
+      "phone": "0936190986"
+    },
+    {
+      "user_id": 3,
+      "name": "Nguyễn Văn Ngọc",
+      "score": 138,
+      "date": "16-01-2020 23:16:32",
+      "phone": "0936100980"
+    }
+  ],
+  "success": true,
+  "message": "Lấy bảng điểm của tất cả các ngày"
+}
