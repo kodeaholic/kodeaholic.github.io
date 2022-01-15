@@ -1,2 +1,0 @@
--Thay đổi lại thời gian rơi giữa các chicken, hiện tại thời gian rơi trứng của các chicken gần nhau quá khó hứng
-- Tính xem khoảng cách 1px bằng bao nhiêu pageX
